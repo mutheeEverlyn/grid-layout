@@ -31,11 +31,7 @@ img{
     border-radius: 10px;
     padding: 10px;
     grid-column:1/span 2; 
-      grid-row:1/span 1;
-      background-image: url("bg-pattern-quotation.svg");
-      background-repeat: no-repeat;
-      background-position: top right 18%;
-      background-size: 100px;
+      grid-row:1/span 1
 }
 .item2{
     background:  hsl(217, 19%, 35%);
@@ -68,13 +64,19 @@ img{
     grid-row:1/span 2;
    
 }
+.quotation{
+    border: none;
+    float: right;
+    position: relative;
+    top: 0px;
+}
 @media(max-width:800px){
     .container{
         margin: 0px;
         display: grid;
-        gap: 20px;
-        width: 100vw;
-        /* margin-left: 10px; */
+        gap: 10px;
+        width: 400px;
+        margin-left: 20px;
         grid-template-columns: 1fr;
         grid-template-rows: 1.2fr 0.6fr 0.6fr 1fr 1.2fr;
         grid-template-areas: "item1"
